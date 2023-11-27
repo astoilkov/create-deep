@@ -1,22 +1,36 @@
-# `{{data.name}}`
+# `create-deep`
 
-> {{data.description}}
+> Mimics SolidJS's `createSignal()` and `createMemo()` but with deep equality checks.
 
-[![Gzipped Size](https://img.shields.io/bundlephobia/minzip/{{data.name}})](https://bundlephobia.com/result?p={{data.name}})
-[![Build Status](https://img.shields.io/github/actions/workflow/status/astoilkov/{{data.name}}/main.yml?branch=main)](https://github.com/astoilkov/{{data.name}}/actions/workflows/main.yml)
+[![Gzipped Size](https://img.shields.io/bundlephobia/minzip/create-deep)](https://bundlephobia.com/result?p=create-deep)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/astoilkov/create-deep/main.yml?branch=main)](https://github.com/astoilkov/create-deep/actions/workflows/main.yml)
 
 ## Install
 
 ```bash
-npm install {{data.name}}
+npm install create-deep
 ```
-
-## Why
-
-## Usage
 
 ## API
 
-## Alternatives
+[`dequal`](https://github.com/lukeed/dequal) is used for the deep equality checks.
 
-## Related
+#### `createDeepSignal<T>(value?: T)`
+
+```ts
+function Component() {
+    const [value, setValue] = createDeepSignal([1, 2, 3])
+}
+```
+
+#### `createDeepMemo<T>(() => T)`
+
+```ts
+function Component() {
+    const value = createDeepMemo(() => {
+        return items().filter(item => item.size > 0)
+    })
+}
+```
+
+

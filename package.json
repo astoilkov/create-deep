@@ -1,9 +1,9 @@
 {
-    "name": "{{data.name}}",
+    "name": "create-deep",
     "version": "0.1.0",
-    "description": "{{data.description}}",
+    "description": "Mimics SolidJS's `createSignal()` and `createMemo()` but with deep equality checks",
     "license": "MIT",
-    "repository": "astoilkov/{{data.name}}",
+    "repository": "astoilkov/create-deep",
     "funding": "https://github.com/sponsors/astoilkov",
     "author": {
         "name": "Antonio Stoilkov",
@@ -11,7 +11,15 @@
         "url": "https://astoilkov.com"
     },
     "keywords": [
-        "{{data.keywords}}"
+        "SolidJS",
+        "memo",
+        "signal",
+        "createMemo",
+        "createSignal",
+        "createDeepMemo",
+        "createDeepSignal",
+        "deep equality",
+        "reactivity"
     ],
     "type": "module",
     "exports": {
@@ -33,11 +41,18 @@
         "src/*.js",
         "src/*.d.ts"
     ],
+    "dependencies": {
+        "dequal": "^2.0.3"
+    },
+    "peerDependencies": {
+        "solid-js": ">=1.5"
+    },
     "devDependencies": {
         "@vitest/coverage-v8": "^0.33.0",
         "jsdom": "^22.1.0",
         "np": "^8.0.4",
         "prettier": "^3.0.3",
+        "solid-js": "^1.8.6",
         "typescript": "^5.2.2",
         "vitest": "^0.34.6"
     }
