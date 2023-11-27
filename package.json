@@ -1,6 +1,6 @@
 {
     "name": "create-deep",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "Mimics SolidJS's `createSignal()` and `createMemo()` but with deep equality checks",
     "license": "MIT",
     "repository": "astoilkov/create-deep",
