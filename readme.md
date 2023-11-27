@@ -1,6 +1,6 @@
 # `create-deep`
 
-> Mimics SolidJS's `createSignal()` and `createMemo()` but with deep equality checks.
+> SolidJS `createSignal()` and `createMemo()` but with deep equality checks.
 
 [![Gzipped Size](https://img.shields.io/bundlephobia/minzip/create-deep)](https://bundlephobia.com/result?p=create-deep)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/astoilkov/create-deep/main.yml?branch=main)](https://github.com/astoilkov/create-deep/actions/workflows/main.yml)
