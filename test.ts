@@ -1,4 +1,4 @@
-import { describe, expect, test } from "vitest";
+import { describe, test } from "vitest";
 import createDeepMemo from "./src/createDeepMemo";
 import createDeepSignal from "./src/createDeepSignal";
 import { createRenderEffect, createRoot } from "solid-js";
