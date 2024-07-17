@@ -5,7 +5,7 @@ import { createRenderEffect, createRoot } from "solid-js";
 
 // for some reason, Solid reactivity doesn't work in tests
 describe("create-deep", () => {
-    test.only("createDeepSignal()", () => {
+    test("createDeepSignal()", () => {
         createTestRoot(() => {
             const [, setValue] = createDeepSignal([1, 2, 3]);
 
