@@ -11,5 +11,11 @@ export default defineConfig({
 
         // adds jsdom (https://github.com/jsdom/jsdom) APIs to tests
         environment: "jsdom",
+
+        coverage: {
+            enabled: true,
+            extension: "js",
+            include: ["src/**/*"],
+        },
     },
 });
